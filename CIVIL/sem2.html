@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Subjects</title>
+    <style>
+            @media (max-width: 768px) {
+            /* Adjust styles for smaller screens */
+            .subject-box {
+                left: 0;
+                width: 100%;
+                top: 200px;
+            }
+            .layered-button {
+                width: 100%;
+                left: 0;
+                top: 150px;
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.7;
+            color: #fff;
+            background: #325800;
+            background-image: url("./bg-texture.png");
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .semester-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .layered-button {
+            width: 50%;
+            padding: 10px 20px;
+            background-color: #9834db;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 26px;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+
+        .layered-button:hover {
+            background-color: #2980B9;
+        }
+
+        .subject-box {
+            position: relative;
+            width: 100%;
+            max-width: 400px; 
+            display: none;
+            padding: 10px;
+            background-color: #E0E0E0;
+            border-radius: 10px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .unit-box {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #c0f3bf;
+            border-radius: 5px;
+            color: #333;
+        }
+        .unit-box a {
+            color: #555;
+            text-decoration: none;
+        }
+        .pdf-box {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #E0E0E0;
+            border-radius: 5px;
+            color: #333;
+        }
+        .pdf-box a {
+            color: #555;
+            text-decoration: none;
+        }
+    </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const subjectBoxes = document.querySelectorAll(".layered-button");
+        const unitBoxes = document.querySelectorAll(".unit-box");
+
+        subjectBoxes.forEach(subjectBox => {
+            subjectBox.addEventListener("click", function() {
+                const unitBox = this.nextElementSibling;
+                unitBox.style.display = unitBox.style.display === "none" ? "block" : "none";
+            });
+        });
+
+        unitBoxes.forEach(unitBox => {
+            unitBox.addEventListener("click", function() {
+                const pdfBox = this.nextElementSibling;
+                pdfBox.style.display = pdfBox.style.display === "none" ? "block" : "none";
+            });
+        });
+    });
+</script>
+</head>
+
+                <body>
+                    <div class="semester-buttons">
+                        <h1>SEMESTER 2</h1>
+                        <button class="layered-button">BASIC ELECTRICAL ELECTRONICS AND INSTRUMENTATION ENGINEERING</button>
+                        <div class="subject-box">
+                            <!-- Content for PYTHON subject -->
+                            <div class="unit-box">
+                                IMPORTANT QUESTIONS
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/185QceD0plE6gZa7j8xKqFObBeyo6GHCP/view?usp=drive_link" target="_blank">pdf1</a>
+                            <br>
+                            <br>
+                            </div>
+                            
+                       
+                  
+                        </div>
+                
+                        <button class="layered-button">STATISTICS & NUMERICAL METHODS </button>
+                        <div class="subject-box">
+                            <!-- Content for MATHS subject -->
+                            <div class="unit-box">
+                                Unit 1
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1Q_i8Y9wi9UXMfeywqyUWuiLtj1b6hOvN/view?usp=drive_link" target="_blank">pdf1</a>
+                              <br>
+                              <br>
+                               
+                            </div>
+                            
+                            
+                            <div class="unit-box">
+                                Unit 2
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1ZlRf3dVT6wG_nFqbDurK3Q3FIzIg2R0H/view?usp=drive_link" target="_blank">pdf2</a>
+                            </div>
+                            <div class="unit-box">
+                                Unit 3
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1HQX43lHdtRilz8oQO-3P8HmjgoXNG_SC/view?usp=drive_link" target="_blank">pdf1</a>
+                            <br>
+                            <br>
+                            </div>
+                
+                            <div class="unit-box">
+                                Unit 4
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1y4tAXCTbKDZtdPi61zyX8cXxG0a9kZoS/view?usp=drive_link" target="_blank">pdf1</a>
+                            <br>
+                            <br>
+                            </div>
+                            <div class="unit-box">
+                                Unit 5
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1BKr4plv9UDltzX2Gc537ZSa5o_krhd2A/view?usp=drive_link" target="_blank">pdf1</a>
+                            <br>
+                            <br>
+                            </div>
+                            <div class="unit-box">
+                                Previous Year Questions
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1NB3ucUVVgHUECp0Ubyw_FeVY-BCHhYz9/view?usp=drive_link" target="_blank">Important Questions</a>
+                            <br>
+                            <br>
+                            </div>
+                            <div class="unit-box">
+                                2 MARKS
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1FnggtRt6KA-oLnkphzn_RUGSy1psPf3U/view?usp=drive_link" target="_blank">2 MARKS</a>
+                            <br>
+                            <br>
+                            </div>
+                        </div>
+ 
+                            
+                        <button class="layered-button">PHYSICS FOR CIVIL ENGINEERING</button>
+                        <div class="subject-box">
+                            <!-- Content for MATHS subject -->
+                            <div class="unit-box">
+                                Unit 1
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/18iCxH61HMCDxZRX0qzjz-W_lW_jbOANl/view?usp=drive_link" target="_blank">pdf1</a>
+                              <br>
+                              <br><!--
+                                <a href="https://drive.google.com/your_link_to_unit1.pdf" target="_blank">pdf2</a>-->
+                            </div>
+                            
+                            
+                            <div class="unit-box">
+                                Unit 3
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/18hia264bZ7WX2BOdHakxNnihXGuWpg-5/view?usp=drive_link" target="_blank">pdf2</a>
+                            </div>
+                            <div class="unit-box">
+                                Unit 4
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1nD-Qd0qNFqsBpO9tFuoWV_SgBec9lmvl/view?usp=drive_link" target="_blank">pdf1</a>
+                            <br>
+                            <br><!--
+                            <a href="https://drive.google.com/your_link_to_unit1_pdf2.pdf" target="_blank">pdf2</a>
+                            <br>
+                            <br>
+                            <a href="https://drive.google.com/your_link_to_unit1_pdf2.pdf" target="_blank">pdf3</a>
+                            <br>
+                            <br>
+                            <a href="https://drive.google.com/your_link_to_unit1_pdf2.pdf" target="_blank">pdf4</a>-->
+                            </div>
+                            <div class="unit-box">
+                                Unit 5
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1xNTPAWGiqRnYf4VSNe8Ia2Dhs4TZslHJ/view?usp=drive_link" target="_blank">pdf1</a>
+                            <br>
+                           <!-- <br>
+                            <a href="https://drive.google.com/your_link_to_unit1_pdf2.pdf" target="_blank">pdf2</a>
+                            <br>
+                            <br>
+                            <a href="https://drive.google.com/your_link_to_unit1_pdf2.pdf" target="_blank">pdf3</a>
+                            <br>
+                            <br>
+                            <a href="https://drive.google.com/your_link_to_unit1_pdf2.pdf" target="_blank">pdf4</a>-->
+                            </div>
+                            <div class="unit-box">
+                               <a href="https://drive.google.com/file/d/1s_kBxNPZ9Ja_CbhLnmzdcqAHGTYvLTv1/view?usp=drive_link">IMPORTANT QUESTIONS</a> 
+                            </div>
+                            <div class="unit-box">
+                                <a href="https://drive.google.com/file/d/1rdcf2G-rqTjx-qnPOeE0ttco6n3p32uJ/view?usp=drive_link">PREVIOUS YEAR QUESTIONS</a> 
+                             </div>
+
+                        </div>
+                        <button class="layered-button">ENGINEERING GRAPHICS</button>
+                        <div class="subject-box">
+                            <!-- Content for MATHS subject -->
+                            <div class="unit-box">
+                                Unit 2
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1R4rmvYBohh8AN0WoJpxakTwY2e3iBmTD/view?usp=drive_link" target="_blank">pdf1</a>
+                              <br>
+                              <br>
+                  
+                            </div>
+                            
+                            
+                            <div class="unit-box">
+                                Unit 3
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1qJ3dpcRY9n8aXCJ4d5-Co4hgF6deFQ-j/view?usp=drive_link" target="_blank">pdf2</a>
+                            </div>
+                            <div class="unit-box">
+                              Important Questions
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1qJ3dpcRY9n8aXCJ4d5-Co4hgF6deFQ-j/view?usp=sharing" target="_blank">pdf1</a>
+                            <br>
+                            <br>
+                            </div>
+                
+                
+                        </div>
+                        <button class="layered-button">PROFESSIONAL ENGLISH 2</button>
+                        <div class="subject-box">
+                            <!-- Content for MATHS subject -->
+                            <div class="unit-box">
+                                Unit 1
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1a0e9IIxdkfpQbCRHnfgLX3yXgvwZW0Hk/view?usp=drive_link" target="_blank">pdf1</a>
+                              <br>
+                              <br>
+                                
+                            </div>
+                            <div class="unit-box">
+                                Unit 2 & 3
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1mlL4H3wARoo-x_7tHU2R_yyVeJWU-6zt/view?usp=drive_link" target="_blank">pdf1</a>
+                              <br>
+                              <br>
+                                
+                            </div>
+                            
+                            <div class="unit-box">
+                              Previous Year Questions
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1GSwHnPgFe6SsUbCcpoIn1fYstFhswS0t/view?usp=drive_link" target="_blank">pdf2</a>
+                            </div>
+                            <div class="unit-box">
+                            Important Questions
+                            </div>
+                            <div class="pdf-box">
+                                <a href="https://drive.google.com/file/d/1_35-G6ul2AHKaxkDp_iouq_Y_GCbkjgQ/view?usp=drive_link" target="_blank">pdf1</a>
+                            <br>
+                            <br>
+                            </div>
+                
+                        </div>
+                
+                        <!-- Add more buttons and subject boxes for other subjects -->
+                    </div>
+                </body>
+                </html>
+ 

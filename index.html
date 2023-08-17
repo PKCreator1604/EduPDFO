@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo" title="University Management System">
+            <img src="./images/logo.png" alt="">
+            <h2><span class="danger">EduPDF</span></h2>
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Notes</h3>
+            </a>
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Syllabus</h3>
+            </a>
+            <a href="password.html">
+                <span class="material-icons-sharp">password</span>
+                <h3>EXAM TIPS</h3>
+            </a>
+        </div>
+        <div id="profile-btn">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Hey, <b>Students</b> </p>
+                        <small class="text-muted">Semester@2</small>
+                    </div>
+                </div>
+                <div class="about">
+                    <h5>Course</h5>
+                    <p>BE. Computer Science & Engineering</p>
+                    <h5>Contact</h5>
+                    <p>6381345772</p>
+                    <h5>Email</h5>
+                    <p>codewith01tech<br>@gmail.com</p>
+                    <h5>Address</h5>
+                    <p>Ungalul Naan</p>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <h1></h1>
+           
+      <section class="section category" aria-label="category">
+
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card" style="--color: 170, 75%, 41%">
+                <a href="./CSE/sem2.html">
+                <div class="card-icon">
+                  <img src="./assets/images/books-colored_439-430-min.png" width="40" height="40" loading="lazy"
+                    alt="Online Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="./CSE/sem2.html" class="card-title">CSE</a>
+                </h3>
+
+                <p class="card-text">
+                  Shaping Digital Frontiers, One Algorithm at a Time.
+                </p>
+
+                <a href="./CSE/sem2.html"><span class="card-badge">Notes</span></a>
+</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 351, 83%, 61%">
+                <a href="./ECE/sem2.html">
+                <div class="card-icon">
+                  <img src="./assets/images/books-colored_439-430-min.png" width="40" height="40" loading="lazy"
+                    alt="Non-Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="./ECE/sem2.html" class="card-title">ECE</a>
+                </h3>
+
+                <p class="card-text">
+                Innovating Connectivity, Powering Progress.
+                </p>
+
+                <a href="./ECE/sem2.html"><span class="card-badge">Notes</span></a>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+                <a href="./EEE/sem2.html">
+                <div class="card-icon">
+                  <img src="./assets/images/books-colored_439-430-min.png" width="40" height="40" loading="lazy"
+                    alt="Off-Campus Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="./EEE/sem2.html" class="card-title">EEE</a>
+                </h3>
+
+                <p class="card-text">
+                Spark, Connect, Empower: EEE in Action.
+                </p>
+
+                <a href="./EEE/sem2.html"><span class="card-badge">Notes</span></a>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 42, 94%, 55%">
+                <a href="./MECH/mech.html">
+                <div class="card-icon">
+                  <img src="./assets/images/books-colored_439-430-min.png" width="40" height="40" loading="lazy"
+                    alt="Hybrid Distance Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="./MECH/mech.html" class="card-title">MECH</a>
+                </h3>
+
+                <p class="card-text">
+                  Precision in Motion: Engineering Tomorrow's Innovations!
+                </p>
+
+                <a href="./MECH/mech.html"><span class="card-badge">Notes</span></a>
+
+                </a>
+              </div>
+            </li>
+            
+            <li>
+                <div class="category-card" style="--color: 42, 94%, 55%; left: 70px; top: 70px;">
+  <a href="./CIVIL/sem2.html">
+                  <div class="card-icon">
+                    <img src="./assets/images/books-colored_439-430-min.png" width="40" height="40" loading="lazy"
+                      alt="Hybrid Distance Programs" class="img">
+                  </div>
+  
+                  <h3 class="h3">
+                    <a href="./CIVIL/sem2.html" class="card-title">CIVIL</a>
+                  </h3>
+  
+                  <p class="card-text">
+  Securing Today for a Safer Tomorrow: Cybersecurity at its Best.
+                  </p>
+  
+                  <a href="./CIVIL/sem2.html"><span class="card-badge">Notes</span></a>
+                </a>
+                </div>
+              </li>
+
+          </ul>
+
+      </section>
+
+
+
+
+        </main>
+
+       
+           
+    </div>
+
+    <script src="timeTable.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

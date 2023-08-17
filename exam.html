@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{overflow: hidden;}
+        header{position: relative;}
+        .exam{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 80vh;
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+            <h1>EduPDF</h1>
+        </div>
+        <div class="navbar">
+            <a href="index.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Notes</h3>
+            </a> 
+            <a href="exam.html" class="active">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Syllabus</h3>
+            </a>
+            <a href="password.html">
+                <span class="material-icons-sharp">password</span>
+                <h3>Exam TIPS</h3>
+            </a>
+
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="container about__achievements-container">
+            <h1>Department</h1>
+            <div>
+                <a href="https://drive.google.com/file/d/1mKY0q0zkylzGcz8ILq9jgoj49UDHrX1M/view?usp=drive_link">
+                <img src="./images/5234839.png" alt="" style="width: 15%; position: absolute;
+                top: 190px;
+                left: 150px;">
+                <div style="          position: absolute;
+                top: 350px;
+                left: 215px;
+                font-size: 28px;">
+                <p><b>CSE</b></p>
+            </div>
+            </a>
+            </div>
+            <div>
+                <a href="https://drive.google.com/file/d/1QhWu75rXf5i_EExDWaXUNuLPCKTx5agF/view?usp=drive_link">
+                <img src="./images/5234839.png" alt="" style="width: 15%; position: absolute;
+                top: 190px;
+                left: 450px;">
+                <div style="          position: absolute;
+                top: 350px;
+                left: 515px;
+                font-size: 28px;">
+                <p><b>ECE</b></p>
+            </div>
+            </a>
+            </div>
+            <div>
+                <a href="https://drive.google.com/file/d/1zOmlr83tJNrZHLEWPTX9GF5n15IliA0p/view?usp=drive_link">
+                <img src="./images/5234839.png" alt="" style="width: 15%; position: absolute;
+                top: 190px;
+                left: 750px;">
+                <div style="          position: absolute;
+                top: 350px;
+                left: 815px;
+                font-size: 28px;">
+                <p><b>EEE</b></p>
+            </div>
+            </a>
+            </div>
+            <div>
+                <a href="https://drive.google.com/file/d/1Mc0acKL0z7Z2ZqhC1F1SB4yydqY5nbA0/view?usp=drive_link">
+                <img src="./images/5234839.png" alt="" style="width: 15%; position: absolute;
+                top: 190px;
+                left: 1050px;">
+                <div style="          position: absolute;
+                top: 350px;
+                left: 1115px;
+                font-size: 28px;">
+                <p><b>CIVIL</b></p>
+            </div>
+            </a>
+            </div>
+            <div>
+                <a href="https://drive.google.com/file/d/1nG4EVSsxcItB_dVPNb0U4qRqNV77kkrN/view?usp=drive_link">
+                <img src="./images/5234839.png" alt="" style="width: 15%; position: absolute;
+                top: 490px;
+                left: 150px;">
+                <div style="          position: absolute;
+                top: 650px;
+                left: 215px;
+                font-size: 28px;">
+                <p><b>MECH</b></p>
+            </div>
+            </a>
+            </div>
+    </div>
+    </main>
+
+</body>
+
+<script src="app.js"></script>
+</html>
